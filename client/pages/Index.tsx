@@ -64,9 +64,9 @@ export default function Index() {
             <div className="relative">
               <div className="rounded-xl border bg-card p-6 shadow-sm">
                 <div className="grid grid-cols-3 gap-4">
-                  <Stat label="{t('annualCapture')}" value={`${results.runoffAnnualM3} m³`} />
+                  <Stat label={t("annualCapture")} value={`${results.runoffAnnualM3} m³`} />
                   <Stat label="Storage" value={`${results.storageTargetM3} m³`} />
-                  <Stat label="{t('roiYears')}" value={results.paybackYears ?? "–"} />
+                  <Stat label={t("roiYears")} value={results.paybackYears ?? "–"} />
                 </div>
                 <div className="mt-6">
                   <ChartContainer config={{ mm: { label: t("localRainfall"), color: "hsl(var(--primary))" } }}>
