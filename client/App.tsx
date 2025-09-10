@@ -50,7 +50,7 @@ function Footer() {
       <div className="container mx-auto px-4 py-6 text-xs text-muted-foreground flex flex-col sm:flex-row items-center justify-between gap-2">
         <p>© {new Date().getFullYear()} AquaHarvest • Empowering sustainable water management</p>
         <p>
-          Built with Fusion Starter
+          Presented by Six Strings
         </p>
       </div>
     </footer>
