@@ -20,12 +20,23 @@ function Header() {
     <header className="sticky top-0 z-40 w-full border-b bg-background/80 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container mx-auto flex h-16 items-center justify-between px-4">
         <Link to="/" className="flex items-center gap-2">
-          <div className="h-8 w-8 rounded bg-primary/90 text-primary-foreground grid place-items-center font-black">🌧️</div>
-          <span className="text-lg font-bold tracking-tight">{t("appName")}</span>
+          <div className="h-8 w-8 rounded bg-primary/90 text-primary-foreground grid place-items-center font-black">
+            🌧️
+          </div>
+          <span className="text-lg font-bold tracking-tight">
+            {t("appName")}
+          </span>
         </Link>
         <nav className="flex items-center gap-2">
-          <Link to="/" className="text-sm font-medium hover:text-primary">Home</Link>
-          <Link to="/resources" className="text-sm font-medium hover:text-primary">{t("viewResources")}</Link>
+          <Link to="/" className="text-sm font-medium hover:text-primary">
+            Home
+          </Link>
+          <Link
+            to="/resources"
+            className="text-sm font-medium hover:text-primary"
+          >
+            {t("viewResources")}
+          </Link>
           <select
             aria-label={t("language")}
             className="ml-2 rounded-md border bg-background px-2 py-1 text-sm"
@@ -48,10 +59,11 @@ function Footer() {
   return (
     <footer className="border-t mt-12">
       <div className="container mx-auto px-4 py-6 text-xs text-muted-foreground flex flex-col sm:flex-row items-center justify-between gap-2">
-        <p>© {new Date().getFullYear()} AquaHarvest • Empowering sustainable water management</p>
         <p>
-          Presented by Six Strings
+          © {new Date().getFullYear()} AquaHarvest • Empowering sustainable
+          water management
         </p>
+        <p>Presented by Six Strings</p>
       </div>
     </footer>
   );
